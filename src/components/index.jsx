@@ -3,11 +3,13 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/form";
 
 const Home = () => {
-  <Card>
-    <FloatingLabel>
-      <Form.Control>
-
-      </Form.Control>
-    </FloatingLabel>
-  </Card>;
+  return (
+    <Card>
+      <FloatingLabel>
+        <Form.Control>Hello</Form.Control>
+      </FloatingLabel>
+    </Card>
+  );
 };
+
+export default Home;
