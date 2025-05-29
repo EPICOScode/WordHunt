@@ -1,11 +1,19 @@
-import { Form, Card, Button} from "react-bootstrap";
+import { Form, Card, Button } from "react-bootstrap";
+import {useState} from "react"; 
+import Features from "./features";
 
-const Home = () => {
+
+const Home = () => {  
+
+
 
 
   return (
-    <Card style={{ width: "25rem" }}  className="position-absolute top-50 start-50 translate-middle" >
-      <Card.Body >
+    <Card
+      style={{ width: "25rem" }}
+      className="position-absolute top-50 start-50 translate-middle"
+    >
+      <Card.Body>
         <Card.Title>Huntah</Card.Title>
         <Card.Text>
           Enter a list of words and the app will show you some features
@@ -18,7 +26,7 @@ const Home = () => {
           />
           <label htmlFor="floatingInputCustom">Words</label>
         </Form.Floating>
-        <Button variant="primary" size="lg" active> Submit </Button>
+       <Features/>
       </Card.Body>
     </Card>
   );
