@@ -1,17 +1,25 @@
-import Card from "react-bootstrap/card";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Form from "react-bootstrap/form";
+import { Form, Card, Button} from "react-bootstrap";
 
 const Home = () => {
-  return (
 
-    
-    <Card>
-      <FloatingLabel>
-        <Form.Control>
-          Hello
-        </Form.Control>
-      </FloatingLabel>
+
+  return (
+    <Card style={{ width: "25rem" }}  className="position-absolute top-50 start-50 translate-middle" >
+      <Card.Body >
+        <Card.Title>Huntah</Card.Title>
+        <Card.Text>
+          Enter a list of words and the app will show you some features
+        </Card.Text>
+        <Form.Floating className="mb-3">
+          <Form.Control
+            id="floatingInputCustom"
+            type="text"
+            placeholder="list of words"
+          />
+          <label htmlFor="floatingInputCustom">Words</label>
+        </Form.Floating>
+        <Button variant="primary" size="lg" active> Submit </Button>
+      </Card.Body>
     </Card>
   );
 };
