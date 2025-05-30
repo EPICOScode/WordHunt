@@ -1,13 +1,13 @@
 import { Form, Card, Button } from "react-bootstrap";
-import {useState} from "react"; 
+import { useState } from "react";
 import Features from "./features";
 
+const Home = () => {
 
-const Home = () => {  
+  const array = [];
 
 
-
-
+  
   return (
     <Card
       style={{ width: "25rem" }}
@@ -16,7 +16,7 @@ const Home = () => {
       <Card.Body>
         <Card.Title>Huntah</Card.Title>
         <Card.Text>
-          Enter a list of words and the app will show you some features
+          <dt>Enter a list of words and the app will show you some features</dt>
         </Card.Text>
         <Form.Floating className="mb-3">
           <Form.Control
@@ -24,9 +24,9 @@ const Home = () => {
             type="text"
             placeholder="list of words"
           />
-          <label htmlFor="floatingInputCustom">Words</label>
+          <label htmlFor="floatingInputCustom"  >Words</label>
         </Form.Floating>
-       <Features/>
+        <Features />
       </Card.Body>
     </Card>
   );
