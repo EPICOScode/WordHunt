@@ -4,9 +4,6 @@ import Features from "./features";
 
 const Home = () => {
 
-  const array = [];
-
-
   
   return (
     <Card
