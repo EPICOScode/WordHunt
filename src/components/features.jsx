@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button, ListGroup } from "react-bootstrap";
+import Vowel from "./vowels"; 
+import Longest from "./longest"; 
+import VowelBeginner from "./vowelBeginner"; 
 
 const Features = () => {
-  let vowels = "";
-  let longest = ""; 
-  let firstVowel = ""; 
-
+  
 
   let [find, setFind] = useState("");
 
@@ -31,9 +31,9 @@ const Features = () => {
   return (
     <>
       <ListGroup>
-        <ListGroup.Item> Vowels used : </ListGroup.Item>
-        <ListGroup.Item> Longest word :</ListGroup.Item>
-        <ListGroup.Item> Words starting with vowel :</ListGroup.Item>
+        <ListGroup.Item> Vowels used :  {Vowel} </ListGroup.Item>
+        <ListGroup.Item> Longest word : {Longest}</ListGroup.Item>
+        <ListGroup.Item> Words starting with vowel : {VowelBeginner}</ListGroup.Item>
       </ListGroup>
       <Button
         variant="primary"

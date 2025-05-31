@@ -3,8 +3,6 @@ import { useState } from "react";
 import Features from "./features";
 
 const Home = () => {
-
-  
   return (
     <Card
       style={{ width: "25rem" }}
@@ -19,9 +17,8 @@ const Home = () => {
           <Form.Control
             id="floatingInputCustom"
             type="text"
-            placeholder="list of words"
           />
-          <label htmlFor="floatingInputCustom"  >Words</label>
+          <label htmlFor="floatingInputCustom">Words</label>
         </Form.Floating>
         <Features />
       </Card.Body>
