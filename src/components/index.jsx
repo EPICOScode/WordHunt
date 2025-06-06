@@ -1,10 +1,11 @@
-import { Form, Card, Button } from "react-bootstrap";
+import { Form, Card} from "react-bootstrap";
 import { useState } from "react";
 import Features from "./features";
 
-const Home = () => {
+const Home = (stringtoSplit, separator) => {
+// const arrayOfStrings = stringtoSplit.splice(separator); 
 
-  const Data = [""];
+//   const words = [""];
   
 
   return (
