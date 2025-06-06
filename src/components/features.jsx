@@ -7,8 +7,9 @@ import VowelBeginner from "./vowelBeginner";
 const Features = () => {
   
 
-  let [find, setFind] = useState("");
-
+  // let [find, setFind] = useState("");
+  
+  const words = "";
 
   /*   ****************vowels***************** 
   on the list of words  the user enters words to the app, 
@@ -22,7 +23,7 @@ const Features = () => {
   
 
   ************ separate the words that use a coma**************
-  I can use splice 
+  I can use split 
 
 
 

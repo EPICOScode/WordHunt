@@ -3,20 +3,24 @@ import { useState } from "react";
 import Features from "./features";
 
 const Home = () => {
+
+  const Data = [""];
+  
+
   return (
     <Card
       style={{ width: "25rem" }}
       className="position-absolute top-50 start-50 translate-middle"
     >
       <Card.Body>
-        <Card.Title>Huntah</Card.Title>
+        <Card.Title className="text-center">HUNTAH</Card.Title>
         <Card.Text>
-          <dt>Enter a list of words and the app will show you some features</dt>
+          <dt>Enter a list of words </dt>
         </Card.Text>
         <Form.Floating className="mb-3">
           <Form.Control
             id="floatingInputCustom"
-            type="text"
+            type="text" 
           />
           <label htmlFor="floatingInputCustom">Words</label>
         </Form.Floating>
