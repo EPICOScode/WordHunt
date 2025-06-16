@@ -1,11 +1,10 @@
 import { Form, Card} from "react-bootstrap";
-import { useState } from "react";
+import { useRef } from "react";
 import Features from "./features";
 
-const Home = (stringtoSplit, separator) => {
-// const arrayOfStrings = stringtoSplit.splice(separator); 
+const Home = () => {
 
-//   const words = [""];
+  
   
 
   return (
@@ -21,14 +20,14 @@ const Home = (stringtoSplit, separator) => {
         <Form.Floating className="mb-3">
           <Form.Control
             id="floatingInputCustom"
-            type="text" 
+            type="text"
           />
           <label htmlFor="floatingInputCustom">Words</label>
+          
         </Form.Floating>
         <Features />
       </Card.Body>
     </Card>
   );
 };
-
 export default Home;
