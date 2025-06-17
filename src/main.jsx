@@ -1,13 +1,9 @@
 import ReactDOM from "react-dom/client";
-import Home from "./components/index";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Home from "./index";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
-
-  return (
-    <Home />
-   )
+  return <Home />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
