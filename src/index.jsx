@@ -1,4 +1,4 @@
-import { Form, Card, ListGroup} from "react-bootstrap";
+import { Card, ListGroup} from "react-bootstrap";
 import { useState } from "react";
 import HandleClick from "./components/handleClick";
 import Vowel from "./components/features/vowels"; 
@@ -10,6 +10,9 @@ import InputFile from "./components/inputFile";
 const Home = () => {
   const [value, setValue] = useState(""); 
 
+  const submitButton = () => {
+    console.log('The words are: ', value )
+  }
   
   return (
     <Card
@@ -21,8 +24,8 @@ const Home = () => {
         <Card.Text>
           <dt>Enter a list of words </dt>
         </Card.Text>
-        <InputFile value={value} onChange = {(e) => {setValue(e.tagret.value)}} />
-        <HandleClick />
+        <InputFile value={value} onChange = {(e) => {setValue(e.target.value)}} />
+        <HandleClick onClick={submitButton}/>
         <hr/>
            <ListGroup>
         <ListGroup.Item> Vowels used :  {Vowel} </ListGroup.Item>
