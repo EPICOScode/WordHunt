@@ -12,7 +12,9 @@ const Home = () => {
   const [words, setWords] = useState([]);
 
   const submitButton = () => {
-    console.log('The words are: ', value )
+    const splitWords = value.split(/[ ,.!?]+/).filter(word=>word.trim()!=="");
+    setWords(splitWords)
+    console.log('The words are: ', splitWords )
   }
   
   return (
@@ -29,9 +31,9 @@ const Home = () => {
         <HandleClick onClick={submitButton}/> 
         <hr/>
            <ListGroup>
-        <ListGroup.Item> Vowels used :  {Vowel} </ListGroup.Item>
-        <ListGroup.Item> Longest word : {Longest}</ListGroup.Item>
-        <ListGroup.Item> Words starting with vowel : {VowelBeginner}</ListGroup.Item>
+        <ListGroup.Item> Vowels used :  <Vowel words={words}/></ListGroup.Item>
+        <ListGroup.Item> Longest word : <Longest words={words}/> </ListGroup.Item>
+        <ListGroup.Item> Words starting with vowel : <VowelBeginner words={words}/></ListGroup.Item>
       </ListGroup>
       </Card.Body>
     </Card>
