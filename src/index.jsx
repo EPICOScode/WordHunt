@@ -9,6 +9,7 @@ import InputFile from "./components/inputFile";
 
 const Home = () => {
   const [value, setValue] = useState(""); 
+  const [words, setWords] = useState([]);
 
   const submitButton = () => {
     console.log('The words are: ', value )
@@ -25,7 +26,7 @@ const Home = () => {
           <dt>Enter a list of words </dt>
         </Card.Text>
         <InputFile value={value} onChange = {(e) => {setValue(e.target.value)}} />
-        <HandleClick onClick={submitButton}/>
+        <HandleClick onClick={submitButton}/> 
         <hr/>
            <ListGroup>
         <ListGroup.Item> Vowels used :  {Vowel} </ListGroup.Item>
