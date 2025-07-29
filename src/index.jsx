@@ -1,8 +1,8 @@
-import { Card, ListGroup} from "react-bootstrap";
-import { useState } from "react";
-import HandleClick from "./components/handleClick";
-import Vowel from "./components/features/vowels"; 
-import Longest from "./components/features/longest"; 
+import { Card, ListGroup} from "react-bootstrap";   // ce que j'utilise pour donner forme dans l'UI 
+import { useState } from "react";    // le component react utilisé pour que les elements soient mises a jour de maniére automatique, le status de la page change
+import HandleClick from "./components/handleClick"; // le component/function qui gere ce que se passe quand l'user fait click
+import Vowel from "./components/features/vowels"; // component pour gerer ce que doit se passer avce les voyels 
+import Longest from "./components/features/longest"; // pareil mais pour le mot plus long 
 import VowelBeginner from "./components/features/vowelBeginner"; 
 import InputFile from "./components/inputFile";
 
@@ -29,7 +29,7 @@ const Home = () => {
         </Card.Text>
         <InputFile value={value} onChange = {(e) => {setValue(e.target.value)}} />
         <HandleClick onClick={submitButton}/> 
-        <hr/>
+        <hr/> 
            <ListGroup>
         <ListGroup.Item> Vowels used :  <Vowel words={words}/></ListGroup.Item>
         <ListGroup.Item> Longest word : <Longest words={words}/> </ListGroup.Item>
