@@ -1,10 +1,15 @@
  
+ import { ListGroupItem } from "react-bootstrap";
 
-const Longest = () => {
+const Longest = ({words}) => {
+
+    let longestWord = ""; 
+
+    words
 
     return (
         <>
-        hello
+        <ListGroupItem> Longest word : {longestWord}  </ListGroupItem>
         </>
     )
 }; 

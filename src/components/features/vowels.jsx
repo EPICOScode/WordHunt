@@ -1,18 +1,20 @@
- import Home from "../..";
+ import { ListGroupItem } from "react-bootstrap";
 
-const Vowel = () => {
+const Vowel = ({words}) => {
 
+    
     let vowels = "";
 
-    for (i=0; i < something.length; i++ ){
-        let vowel = something[i]; 
-        if (/[aeiou]/.test.vowel)
-            console.log(vowels)
-    }
+    words.forEach( word => {
+        for (let letter of word.toLowerCase()) {
+            if (/[aeiou]/.test(letter))
+            vowels += letter
+}})
+
 
     return (
         <>
-          
+        <ListGroupItem> Vowels used :  {vowels} </ListGroupItem>  
         </>
     )
 }; 

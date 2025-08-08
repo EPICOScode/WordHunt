@@ -1,11 +1,17 @@
+ import { ListGroupItem } from "react-bootstrap";
 
 
-const VowelBeginner = () => {
+const VowelBeginner = ({words}) => {
 
-    return(
-<>
-</>
-    ); 
-}; 
+let beginner = ''; 
 
-export default VowelBeginner; 
+words 
+
+  return (
+    <>
+      <ListGroupItem> Words starting with vowel : {beginner} </ListGroupItem>
+    </>
+  );
+};
+
+export default VowelBeginner;
