@@ -1,17 +1,18 @@
- 
- import { ListGroupItem } from "react-bootstrap";
+import { ListGroupItem } from "react-bootstrap";
 
-const Longest = ({words}) => {
+const Longest = ({ words }) => {
+  
 
-    let longestWord = ""; 
+let longestWord = words.reduce((long,current) => {
+  return current.length > long.length ? current : long
+}, "")  
 
-    words
 
-    return (
-        <>
-        <ListGroupItem> Longest word : {longestWord}  </ListGroupItem>
-        </>
-    )
-}; 
+     return (
+    <>
+      <ListGroupItem> Longest word : {longestWord} </ListGroupItem>
+    </>
+  );
+};
 
-export default Longest; 
+export default Longest;

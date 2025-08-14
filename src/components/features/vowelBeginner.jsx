@@ -3,9 +3,7 @@
 
 const VowelBeginner = ({words}) => {
 
-let beginner = ''; 
-
-words 
+let beginner = words.filter();
 
   return (
     <>
