@@ -5,7 +5,7 @@ const Longest = ({ words }) => {
 
 let longestWord = words.reduce((long,current) => {
   return current.length > long.length ? current : long
-}, "")  
+},"")  
 
 
      return (
